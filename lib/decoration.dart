@@ -47,6 +47,10 @@ class DecorationScreen extends StatelessWidget {
                 color: Colors.black,
                 width: 5,
               ),
+              gradient: LinearGradient(
+                  colors: [Colors.red, Colors.black],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -70,6 +74,14 @@ class DecorationScreen extends StatelessWidget {
                       width: 10,
                     ),
                   ],
+                ),
+                Container(
+                  height: 120,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    gradient: RadialGradient(
+                        colors: [Colors.pink, Colors.amber], radius: 0.8),
+                  ),
                 )
               ],
             ),
