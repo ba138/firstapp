@@ -1,4 +1,4 @@
-import 'package:firstapp/user_profile.dart';
+import 'package:firstapp/button_demo_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,12 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: UserProfile(),
+      home: ButtonDemoScreen(),
     );
   }
 }
