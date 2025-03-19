@@ -1,5 +1,6 @@
 import 'package:firstapp/button_demo_screen.dart';
 import 'package:firstapp/scrolling_demo_screen.dart';
+import 'package:firstapp/singup_screen.dart';
 import 'package:firstapp/textfield_demo_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: TextfieldDemoScreen(),
+      home: SingupScreen(),
     );
   }
 }
