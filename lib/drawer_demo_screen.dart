@@ -77,6 +77,15 @@ class _DrawerDemoScreenState extends State<DrawerDemoScreen> {
           ],
         ),
       ),
+      body: Center(
+        child: Builder(builder: (context) {
+          return ElevatedButton(
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+              child: Text("open Drawer"));
+        }),
+      ),
     );
   }
 }
