@@ -81,12 +81,14 @@ class _StackDemoScreenState extends State<StackDemoScreen> {
               width: 40,
               decoration:
                   BoxDecoration(shape: BoxShape.circle, border: Border.all()),
-              child: Container(
-                height: 20,
-                width: 20,
-                decoration: BoxDecoration(
-                    color: isOn ? Colors.red : Colors.black,
-                    shape: BoxShape.circle),
+              child: Center(
+                child: Container(
+                  height: 20,
+                  width: 20,
+                  decoration: BoxDecoration(
+                      color: isOn ? Colors.red : Colors.black,
+                      shape: BoxShape.circle),
+                ),
               ),
             ),
           )
