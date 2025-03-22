@@ -3,9 +3,8 @@
 // import 'package:firstapp/singup_screen.dart';
 // import 'package:firstapp/textfield_demo_screen.dart';
 
-import 'package:firstapp/drawer_demo_screen.dart';
 import 'package:firstapp/singup_screen.dart';
-import 'package:firstapp/stack_demo_screen.dart';
+import 'package:firstapp/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SingupScreen(),
+      home: SplashScreen(),
     );
   }
 }
