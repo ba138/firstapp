@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+
+class NotificationScreen extends StatelessWidget {
+  const NotificationScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text("this is my notification"),
+        Text("this is my notification"),
+        ElevatedButton(
+          onPressed: () {},
+          child: Text("Notifications"),
+        )
+      ],
+    );
+  }
+}
