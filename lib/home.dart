@@ -4,14 +4,14 @@ import 'package:firstapp/notification.dart';
 import 'package:firstapp/profile.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class CustomBar extends StatefulWidget {
+  const CustomBar({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<CustomBar> createState() => _CustomBarState();
 }
 
-class _HomeState extends State<Home> {
+class _CustomBarState extends State<CustomBar> {
   int myIndex = 0;
   List myList = [
     HomeScreen(),
