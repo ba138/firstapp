@@ -1,3 +1,4 @@
+import 'package:firstapp/constants.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatelessWidget {
@@ -5,13 +6,20 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text("this is my cart"),
-        Text("this is my cart"),
-        Text("this is my cart"),
-        Text("this is my cart"),
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: GridView.builder(
+          itemCount: dataList.length,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
+          itemBuilder: (context, index) {
+            return Container(
+              height: 100,
+              width: 300,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12), color: Colors.grey),
+            );
+          }),
     );
   }
 }
