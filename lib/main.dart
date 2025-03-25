@@ -4,7 +4,6 @@
 // import 'package:firstapp/textfield_demo_screen.dart';
 
 import 'package:firstapp/home.dart';
-import 'package:firstapp/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
