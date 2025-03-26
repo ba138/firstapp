@@ -18,6 +18,12 @@ class CartScreen extends StatelessWidget {
               width: 300,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12), color: Colors.grey),
+              child: Column(
+                children: [
+                  Text("github"),
+                  ElevatedButton(onPressed: () {}, child: Text("github"))
+                ],
+              ),
             );
           }),
     );

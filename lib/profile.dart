@@ -1,3 +1,4 @@
+import 'package:firstapp/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -7,10 +8,12 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text("this is my Profile"),
-        Text("this is my Profile"),
-        Text("this is my Profile"),
-        Text("this is my Profile"),
+        CustomButton(
+            ontap: () {
+              debugPrint("This is profile Button");
+            },
+            title: "Profile Button",
+            backgroundColor: Colors.amber)
       ],
     );
   }
