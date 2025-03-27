@@ -3,6 +3,7 @@
 // import 'package:firstapp/singup_screen.dart';
 // import 'package:firstapp/textfield_demo_screen.dart';
 
+import 'package:firstapp/custom_dialog.dart';
 import 'package:firstapp/home.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: CustomBar(),
+      home: DemoDialog(),
     );
   }
 }
