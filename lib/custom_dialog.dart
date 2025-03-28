@@ -99,6 +99,7 @@ class _DemoDialogState extends State<DemoDialog> {
     ));
   }
 
+  int count = 10;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -110,7 +111,12 @@ class _DemoDialogState extends State<DemoDialog> {
             children: [
               CustomButton(
                   ontap: () {
-                    customDialog(context);
+                    // customDialog(context);
+                    String stringCount = count.toString();
+                    debugPrint("this is the string count $stringCount");
+                    int intCount = int.parse(stringCount);
+                    double doubleCount = double.parse(stringCount);
+                    debugPrint("this is the double count $doubleCount");
                   },
                   title: "Dialog",
                   backgroundColor: Colors.red),
