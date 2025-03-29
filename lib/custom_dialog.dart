@@ -82,6 +82,24 @@ class _DemoDialogState extends State<DemoDialog> {
         });
   }
 
+  customSnackBar(BuildContext context) {
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      backgroundColor: Colors.grey.shade400,
+      content: Text(
+        "This item has been removed",
+        style: TextStyle(
+            color: Colors.black, fontSize: 14, fontWeight: FontWeight.w400),
+      ),
+      duration: const Duration(seconds: 2),
+      action: SnackBarAction(
+        label: "undo",
+        onPressed: () {},
+        backgroundColor: Colors.green,
+      ),
+    ));
+  }
+
+  int count = 10;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,10 +107,16 @@ class _DemoDialogState extends State<DemoDialog> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CustomButton(
                   ontap: () {
-                    customDialog(context);
+                    // customDialog(context);
+                    String stringCount = count.toString();
+                    debugPrint("this is the string count $stringCount");
+                    int intCount = int.parse(stringCount);
+                    double doubleCount = double.parse(stringCount);
+                    debugPrint("this is the double count $doubleCount");
                   },
                   title: "Dialog",
                   backgroundColor: Colors.red),
@@ -100,7 +124,9 @@ class _DemoDialogState extends State<DemoDialog> {
                 height: 20,
               ),
               CustomButton(
-                  ontap: () {},
+                  ontap: () {
+                    customSnackBar(context);
+                  },
                   title: "SnackBar",
                   backgroundColor: Colors.green),
             ],
